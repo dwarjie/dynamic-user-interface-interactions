@@ -2,10 +2,12 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	font-family: sans-serif;
 }
 
 body {
 	background-color: #f4f4fc;
+	height: 100vh;
 }
 
 nav {
@@ -19,6 +21,7 @@ nav {
 	height: 2.5rem;
 	background-color: white;
 	font-size: 1.2rem;
+	box-shadow: 5px 5px 8px black;
 }
 
 a {
@@ -28,4 +31,19 @@ a {
 
 a:hover {
 	color: #2f64f9;
+}
+
+.active {
+	color: #2f64f9;
+}
+
+.wrapper {
+	display: flex;
+	height: 100%;
+	justify-content: center;
+	align-items: center;
+}
+
+.content {
+	color: black;
 }
