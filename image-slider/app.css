@@ -9,6 +9,16 @@ img {
 	height: auto;
 }
 
+.fa-solid {
+	color: black;
+	font-size: 3rem;
+}
+
+.arrow {
+	padding: 1.5rem;
+}
+
+
 .image-container {
 	margin-top: 50px;
 	display: flex;
