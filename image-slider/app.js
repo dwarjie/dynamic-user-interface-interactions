@@ -11,31 +11,38 @@ function changeSlide() {
 	slide.setAttribute('src', `./img/img${currentImg}.jpg`)
 }
 
-function checkImgNumber() {
+// this function will return true if imgNumber is the max number of image 
+function overImgNumber() {
 	// check if currentImg is not over 4 because image only has 4
-	if (currentImg != 4 && currentImg != 0) 
+	if (currentImg === 4) 
 		return true
 
 	return false;
 }
 
-function nextSlide() {
-	currentImg++;	
-	changeSlide();
+// this function will return true if imgNumber is last number of image
+function lessImgNumber() {
+	// check if currentImg is equal 0
+	if (currentImg === 1) {
+		return true
+	} 
 
-	if (checkImgNumber() === false) {
+	return false;
+}
+
+function nextSlide() {
+	if (overImgNumber()) {
 		currentImg = 0;
 	}
+
+	currentImg++;	
+	changeSlide();
 }
 
 function prevSlide() {
-	if (checkImgNumber()) {
+	if (lessImgNumber())	
 		currentImg = 5;
-	}
 
-	currentImg--;	
+	currentImg--;
 	changeSlide();
 }
-
-
-
