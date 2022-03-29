@@ -21,7 +21,6 @@ function fadeIn() {
 	let opacity = 0;
 	let intervalId = setInterval(function() {
 		if (opacity < 1) {
-			console.log(opacity)
 			opacity = opacity + 0.2;
 			imageFrame.style.opacity = opacity;
 		} else {
@@ -34,7 +33,6 @@ function fadeOut() {
 	let opacity = 1;
 	let intervalId = setInterval(function() {
 		if (opacity > 0) {
-			console.log(opacity)
 			opacity = opacity - 0.2;
 			imageFrame.style.opacity = opacity;
 		} else {

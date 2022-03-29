@@ -12,12 +12,24 @@ img {
 .fa-solid {
 	color: black;
 	font-size: 3rem;
+	transition: transform .3s ease-out;
+}
+
+.fa-circle {
+	cursor: pointer;
+	font-size: 1rem;
+	margin: 1.5rem 2rem;
 }
 
 .arrow {
-	padding: 1.5rem;
+	margin: 1.5rem;
 }
 
+.circle-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
 
 .image-container {
 	margin-top: 50px;
@@ -26,8 +38,22 @@ img {
 	align-items: center;
 }
 
-.image-frame {
+.frame-container {
 	width: 70%;
-	height: 60vh;
+	height: 75vh;
+}
+
+.image-frame {
+	height: 90%;
 	overflow: hidden;
+}
+
+.circle-active {
+	color: white;
+	border: 2px solid black;	
+	border-radius: 100px;
+}
+
+.fa-solid:hover {
+	transform: scale(1.2);
 }
